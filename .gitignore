@@ -1,0 +1,8 @@
+# Project exclude paths
+/.gradle/
+/hello-service/build/
+/hello-service/build/classes/java/main/
+/name-service/build/
+/name-service/build/classes/java/main/
+/shared-library/build/
+/shared-library/build/classes/java/main/
