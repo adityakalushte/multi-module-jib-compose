@@ -111,12 +111,14 @@ Set PROJECT_ID=docker-jib-multi as env variable
 gradlew build jibDockerBuild
 
 docker network create my-net
-
 docker run --rm -ti -d --network my-net -p 8080:8080 --name name-service gcr.io/docker-jib-multi/name-service:0.1.0
-
 docker run --rm -ti -d --network my-net -p 8081:8081 --name hello-service gcr.io/docker-jib-multi/hello-service:0.1.0
+OR
+docker compose up -d
 
-Launch http://localhost:8080/ and http://localhost:8081/
+Launch via http://localhost:8080/ and http://localhost:8081/
+
+docker compose down
 
 ```
 
